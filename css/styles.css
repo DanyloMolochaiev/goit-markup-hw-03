@@ -1,0 +1,294 @@
+/* Common style settings */
+:root {
+    --text-color-blue: #2196f3;
+    --text-color-black: #212121;
+    --text-color-grey: #757575;
+    --color-white: #ffffff;
+    --color-grey: #f5f4fa;
+    --color-dark: #2f303a;
+       --text-color-footer: #ffffff99;
+    --logo-color-black: #000000;
+    --color-hover-button:#188ce8;
+}
+
+/* hidden titles */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* Main styles */
+body {
+    background-color: var(--color-white);
+    color: var(--text-color-black);
+     font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+/* List, link, p settings */
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+p {
+    font-style: normal;
+    font-weight: 400;
+}
+/* Logo settings in header and footer */
+.logo {
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--text-color-blue);
+}
+header .logostudio {
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--logo-color-black);
+}
+footer .logostudio {
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--color-white);
+}
+/* Header, footer background */
+.header {
+    border: 1px solid #ECECEC;
+}
+.footer {
+    background-color: var(--color-dark);
+}
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--text-color-black);
+}
+.contact-link {
+    font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--text-color-grey);
+}
+
+/* Зміна кольору при наведенні та зміні фокусу */
+.nav-list a:hover,
+.contact-list a:hover,
+.nav-list a:focus,
+.contact-list a:focus,
+.footer-link:hover,
+.footer-link:focus,
+.adress:hover,
+.adress:focus {
+    color: var(--text-color-blue);
+}
+/* Налаштування секції hero */
+.hero {
+    background-color: var(--color-dark);
+    border: 1px solid #ECECEC
+}
+.hero-title {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.45;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+ color: var(--color-white);
+}
+/* Налаштування кнопки order */
+.button-order {
+background: var(--text-color-blue);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+color: var(--color-white);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+cursor: pointer;
+}
+
+.button-order:hover,
+.button-order:focus {
+background-color: var(--color-hover-button);
+}
+/* Налаштування секції main */
+.main-title {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+.main-about {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--text-color-grey);
+}
+/* Налаштування секції services */
+.services-title {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+}
+/* Налаштування секції team */
+.team {
+    background-color: var(--color-grey);
+}
+.team-title {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+}
+.team-list {
+   display: block;
+    width: 270px;
+height: 368px;
+       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px
+}
+.team h3 {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+}
+.team p {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--text-color-grey);
+}
+.team-list {
+    background-color: var(--color-white);
+    text-align: center;
+}
+
+/* Налаштування footer */
+.adress {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--color-white);
+}
+
+.footer-link {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--text-color-footer);
+}
+/* Поточна сторінка */
+.current {
+    color: var(--text-color-blue);
+}
+/* Налаштування сторінки портфоліо */
+/* Налаштування кнопок сервісів сторінки портфоліо */
+.button-about {
+width: 128px;
+height: 38px;
+background-color: var(--color-grey);
+color: var(--text-color-black);
+border-radius: 4px;
+border-color: var(--color-grey);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+}
+.button-about:hover,
+.button-about:focus {
+    color: var(--color-white);
+    background-color: var(--text-color-blue);
+    cursor: pointer;
+}
+.samples-item {
+    display: block;
+      width: 370px;
+height: 404px;
+background-color: var(--color-white);
+border: 1px solid #EEEEEE;
+}
+.samples-title {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--text-color-black);
+}
+
+.samples-par{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+color: var(--text-color-grey);
+}
