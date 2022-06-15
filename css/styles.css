@@ -10,6 +10,13 @@
     --logo-color-black: #000000;
     --color-hover-button:#188ce8;
 }
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 /* hidden titles */
 .visually-hidden {
@@ -74,12 +81,15 @@ letter-spacing: 0.03em;
 color: var(--color-white);
 }
 /* Header, footer background */
-.header {
-    border: 1px solid #ECECEC;
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+    width: 1630px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.footer {
-    background-color: var(--color-dark);
-}
+
 .nav-link {
     font-family: 'Roboto', sans-serif;
 font-style: normal;
@@ -109,12 +119,64 @@ color: var(--text-color-grey);
 .adress:hover,
 .adress:focus {
     color: var(--text-color-blue);
+    cursor: pointer;
 }
+/* Налаштування main-nav */
+.main-nav {
+    display: flex;
+    }
+    .header-nav {
+        display: flex;
+align-items: center;
+    }
+/* Налаштування посилань сторінок header */
+
+.nav-list {
+    display: flex;
+    margin-left: 93px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.nav-list .nav-item + .nav-item {
+        margin-left: 50px;
+        
+}
+.nav-list .nav-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    }
+/* Налаштування контактів header */
+.contact-list {
+    display: flex;
+    margin-left: auto;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.contact-list .contact-item + .contact-item {
+    margin-left: 50px;   
+}
+.contact-list .contact-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+}
+
+
+
 /* Налаштування секції hero */
 .hero {
     background-color: var(--color-dark);
-    border: 1px solid #ECECEC
-}
+    text-align: center;
+    width: 1630px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 94px;
+    }
 .hero-title {
     font-family: 'Roboto';
 font-style: normal;
@@ -125,6 +187,10 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
  color: var(--color-white);
+ padding-top: 200px;
+ margin-top: 0;
+ margin-bottom: 0;
+ margin-bottom: 40px;
 }
 /* Налаштування кнопки order */
 .button-order {
@@ -137,11 +203,13 @@ font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
-display: flex;
-align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
 cursor: pointer;
+padding: 10px 32px;
+}
+.hero-content {
+    padding-bottom: 200px;
 }
 
 .button-order:hover,
@@ -157,6 +225,8 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
+margin-top: 0;
+margin-bottom: 10px;
 }
 .main-about {
     font-family: 'Roboto';
@@ -166,6 +236,25 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--text-color-grey);
+display: flex;
+width: 270px;
+margin-top: 0;
+margin-bottom: 0;
+}
+.main-item {
+    display: block;
+}
+.main-list {
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.main-list .main-item + .main-item {
+    margin-left: 30px;
+}
+.main {
+    margin-bottom: 94px;
 }
 /* Налаштування секції services */
 .services-title {
@@ -176,10 +265,36 @@ font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
+margin-top: 0;
+margin-bottom: 50px;
+}
+.services-item {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.services-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.services-list .services-item + .services-item {
+    margin-left: 30px;
+}
+.services {
+    margin-bottom: 94px;
 }
 /* Налаштування секції team */
 .team {
     background-color: var(--color-grey);
+    text-align: center;
+    width: 1630px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 0;
 }
 .team-title {
     font-family: 'Roboto';
@@ -189,13 +304,25 @@ font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
+margin-top: 0;
+margin-bottom: 50px;
+padding-top: 94px;
 }
-.team-list {
+.team-item {
    display: block;
     width: 270px;
-height: 368px;
        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px
+border-radius: 0px 0px 4px 4px;
+}
+.team-list {
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 94px;
+}
+.team-list .team-item + .team-item {
+    margin-left: 30px;
 }
 .team h3 {
     font-family: 'Roboto';
@@ -214,12 +341,37 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--text-color-grey);
 }
-.team-list {
+.team-item {
     background-color: var(--color-white);
     text-align: center;
 }
+.team-item img {
+    margin-bottom: 30px;
+}
+.team-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.team-item p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
 
 /* Налаштування footer */
+.footer {
+    background-color: var(--color-dark);
+    width: 1630px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.footer .footer-nav {
+    padding-top: 60px;
+    text-align: left;
+}
 .adress {
     font-family: 'Roboto';
 font-style: normal;
@@ -239,39 +391,110 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--text-color-footer);
 }
+.footer-list {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding-bottom: 60px;
+}
+.footer-list .footer-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.footer .logo {
+    margin-bottom: 20px;
+}
 /* Поточна сторінка */
 .current {
     color: var(--text-color-blue);
 }
 /* Налаштування сторінки портфоліо */
 /* Налаштування кнопок сервісів сторінки портфоліо */
+.buttons-list {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.buttons-item {
+    display: flex;
+}
+.buttons-list {
+    display: flex;
+    justify-content: center;
+}
 .button-about {
-width: 128px;
-height: 38px;
-background-color: var(--color-grey);
-color: var(--text-color-black);
-border-radius: 4px;
-border-color: var(--color-grey);
-font-family: 'Roboto';
+ font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
-line-height: 1.62;
+line-height: 26px;
 text-align: center;
 letter-spacing: 0.03em;
+color: var(--text-color-black);
+ background-color: var(--color-grey);
+ border-radius: 4px;
+ border-color: transparent;
 }
 .button-about:hover,
-.button-about:focus {
+.button-about:focus,
+.button-about:active {
     color: var(--color-white);
     background-color: var(--text-color-blue);
     cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
+.buttons-list .buttons-item + .buttons-item {
+    margin-left: 8px;
+}
+.buttons {
+    padding-top: 100px;
+    margin-bottom: 56px;
+}
+
+
+/* Налаштування секції зразків робіт портфоліо */
+
+.samples-list {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+         flex-wrap: wrap;
+  }
+ 
+  .samples-list h3, .samples-list p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 24px;
+}
+.samples-item h3 {
+    margin-bottom: 4px;
+    padding-top: 20px;
+    }
+   
+    .samples-item p {
+        padding-bottom: 20px;
+       
+       }
+       .samples-border {
+ border-left: 1px solid #EEEEEE;
+ border-bottom: 1px solid #EEEEEE;
+ border-right: 1px solid #EEEEEE;
+        }
 .samples-item {
     display: block;
       width: 370px;
-height: 404px;
 background-color: var(--color-white);
-border: 1px solid #EEEEEE;
+margin-right: 30px;
+margin-bottom: 30px;
+}
+
+.samples-item.samples-item:nth-child(3n){
+    margin-right: 0;
+}
+.samples-item:nth-last-child(-n+3){
+    margin-bottom: 0;
 }
 .samples-title {
     font-family: 'Roboto';
@@ -291,4 +514,10 @@ font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
 color: var(--text-color-grey);
+}
+.samples {
+    padding-bottom: 94px;
+}
+.samples-item:hover{
+    cursor: pointer;
 }
